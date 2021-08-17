@@ -8,7 +8,8 @@ capans=str(input("Are CAPITAL Alphabets allowed ? (Y/N) : "))
 smallans=str(input("Are lowercase Alphabets allowed ? (Y/N) : "))
 digans=str(input("Are Digits allowed ? (Y/N) : "))
 spans=str(input("Are Special Charecters allowed ? (Y/N) : "))
-rep=input("Way 1 or Way 2? (1/2) : ")
+print("Way 1 is meant for Minimal Resource Usage and Way 2 for more secure generation.")
+rep=input("Way 1 or Way 2 ? (1/2) : ")
 capans,smallans,digans,spans=capans.title(),smallans.title(),digans.title(),spans.title()
 if capans=='Y':
      if smallans=='Y':
@@ -61,7 +62,7 @@ else :
 password=""
 if rep=='1':
      for i in range(passlen):
-          password+=comblis[random.randint(0,len(comblis)]
+          password+=comblis[random.randint(0,len(comblis)-1)]
           
 else:
      random.shuffle(comblis)
